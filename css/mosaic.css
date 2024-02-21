@@ -23,11 +23,13 @@
   text-transform: uppercase;
   margin-bottom: 2em;
 }
+
 @media (min-width: 1500px) {
   .logo {
     margin-bottom: 5em;
   }
 }
+
 .logo span {
   font-weight: 700;
 }
@@ -39,19 +41,20 @@
   display: inline-block;
   margin-right: 2em;
 }
+
 @media (min-width: 1500px) {
   .nav-item {
     display: block;
     margin: 7vh 0;
   }
 }
+
 .nav-item.active {
   color: #c4c4c4;
 }
 
 .portfolio {
   display: grid;
-  height: 100%;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
@@ -71,26 +74,32 @@
   position: relative;
   z-index: 10;
 }
+
 .portfolio-item.small {
   grid-row: span 1;
   grid-column: span 1;
 }
+
 .portfolio-item.medium {
   grid-row: span 2;
   grid-column: span 2;
 }
+
 .portfolio-item.large {
   grid-row: span 3;
   grid-column: span 3;
 }
+
 .portfolio-item.tall {
   grid-row: span 3;
   grid-column: span 2;
 }
+
 .portfolio-item.wide {
   grid-row: span 2;
   grid-column: span 3;
 }
+
 .portfolio-item:hover {
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
@@ -99,6 +108,7 @@
 .two {
   background-image: url(//unsplash.it/800/600);
 }
+
 .two::before {
   content: "";
   display: block;
@@ -112,6 +122,7 @@
   transition: all ease-in-out 300ms;
   z-index: -1;
 }
+
 .two:hover::before {
   opacity: 0.2;
 }
