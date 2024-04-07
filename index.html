@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev ArtDesign</title>
-    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./WDevCore/StyleModules/css/site.css">
 </head>
 
 <body>
     <header class="site-header">
         <nav class="main-nav">
             <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contactos</a>
+            <a href="#services">Servicios</a>
+            <a href="#proyects">Proyectos</a>
+            <a href="#footer">Contactos</a>
         </nav>
 
-        <img src="./media/logos/devcoreLogo_1.png" class="logo">
+        <img src="./WDevCore/Media/logos/devcoreLogo_1.png" class="logo">
         <div class="container">
             <div class="trigger"></div>
             <div class="trigger"></div>
@@ -492,20 +492,10 @@
         </div>
     </header>
     <main>
-        <!-- MENU PROYECTS -->
-        <div class="mosaic-body">           
-            <div class="main-content">
-                <h2>PROYECTOS</h2>
-                <div class="proyects-container">
-                    <div class="proyect-card">
-                        <img src="./media/logos/devexpBanner.png" alt="">
-                    </div>                    
-                </div>
-            </div>
-        </div>
+       
         <!-- MOSAIC MENU SERVICES -->
         <div class="mosaic-body">           
-            <div class="main-content">
+            <div class="main-content" id="services">
                 <h2>SERVICES</h2>
                 <div class="portfolio">
                     <div class="portfolio-item medium">one</div>
@@ -519,9 +509,19 @@
                 </div>
             </div>
         </div>
-
+         <!-- MENU PROYECTS -->
+         <div class="mosaic-body" id="proyects">           
+            <div class="main-content">
+                <h2>PROYECTOS</h2>
+                <div class="proyects-container">
+                    <div class="proyect-card">
+                        <a href="./WDevCore/WDevExpJs.html"> <img src="./WDevCore/Media/logos/devexpBanner.png"></a>                       
+                    </div>                    
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" id="footer">
         <div class="social-media-links">
             <ul>
               <li>
